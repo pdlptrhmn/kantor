@@ -5,10 +5,11 @@
 </head>
 <body>
 
-<h1>Daftar Nama: </h1>
-	@foreach ($data as $datab)
-	<li>{{ $datab }}</li>
+<h1>Daftar : </h1>
+	@foreach ($ddd as $bina)
+	<li>{{ $bina }}</li>
 	@endforeach
+
 
 </body>
 </html>

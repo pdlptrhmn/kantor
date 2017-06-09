@@ -5,9 +5,9 @@
 </head>
 <body>
 
-<h1>Daftar Nama: </h1>
-	@foreach ($data as $datab)
-	<li>{{ $datab }}</li>
+<h1>Daftar Kendaraan: </h1>
+	@foreach ($kendaraan as $kend)
+	<li>{{ $kend }}</li>
 	@endforeach
 
 </body>

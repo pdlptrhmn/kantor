@@ -5,9 +5,9 @@
 </head>
 <body>
 
-<h1>Daftar Nama: </h1>
-	@foreach ($data as $datab)
-	<li>{{ $datab }}</li>
+<h1>Daftar Laptop: </h1>
+	@foreach ($laptop as $lpt)
+	<li>{{ $lpt</li>
 	@endforeach
 
 </body>

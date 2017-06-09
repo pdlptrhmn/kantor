@@ -37,7 +37,12 @@ route::get ('/pengaturan',function(){
 		return $c;
 });
 
-Route::get('','PrakerinController@percobaan');
+//Route::get('','PrakerinController@percobaan');
 
-Route::get('halaman/{id}','PrakerinController@param');
-Route::get('/{f}','PrakerinController@parameter');
+//Route::get('halaman/{id}','PrakerinController@param');
+//Route::get('/{f}','PrakerinController@parameter');
+//Route::get('test','CobaController@test');
+Route::get('test/{id}','CobaController@test1');
+Route::get('bb','CobaController@indexx');
+Route::get('percobaan','CobaController@ulang');
+Route::get('/{ata}','CobaController@ff');
