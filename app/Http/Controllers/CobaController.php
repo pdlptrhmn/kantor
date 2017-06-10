@@ -17,11 +17,23 @@ class CobaController extends Controller
     	$a = coba::find($id);
     	return $a;
     }
-    public function indexx()
+
+
+    public function indexx($id)
     {
-    	$tampilan = coba::all();
-    	return view('indexx', compact('tampilan'));
+    	$tampilan = coba::find($id);
+    	return $tampilan;
     }
+
+    public function indexxx($id)
+    {
+        $tampilan = coba::where('jurusan','like','%'.$id.'%')-> ORwhere('nama','like','%'.$id.'%')->get();
+
+        return $tampilan;
+    }
+
+
+
         public function ulang()
     {
     	$data = ['ali', 'ari', 'ani', 'andri', 'andra'];
@@ -45,6 +57,8 @@ class CobaController extends Controller
     	
     	return view('campur', compact('ddd'));
     }
+
+
 
 
 }
